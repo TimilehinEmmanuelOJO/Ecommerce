@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@600&family=Ubuntu&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #ffffff;
+    line-height: 1.6;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+img{
+    width: 100%;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    margin-left: 20px;
+    margin-top: 33px;
+}
+li{margin-left: 30px;}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+.container{
+    
+    width: 1044px;
+    max-width: 100%;
+    margin-left: 120px;
+}
+.nav-flex{
+    display: flex;
+    justify-content: space-between;
+}
+.sneak{font-size: 50px; margin-top: 0px; }
+.ul1{
+    display: flex;
+    justify-content:space-between ;
+    
+}
+.ul2{
+    margin-top: 20px;
+}
+.image{
+    width: 53px;
+    border-radius: 50%;
+}
+.cart{
+    color: black;
+    font-size: 22px;
+    margin: auto 50px;
+    position: relative;
+    bottom: 15px;
+}
+.line{
+    width: 1044px;
+    height: 2px;
+    background-color: rgb(31, 28, 28);
+    margin-top: 20px;
+}
+.section2{
+    display: flex;
+    margin-top: 66px;
+    margin-bottom: 50px;
+}
+.pic-main{
+    display: grid;
+    margin-left: 180px;
+    margin-right: 90px;
+}
+.mainp{
+    width:400px; 
+    margin-bottom: 34px;
+    border-radius: 10px;
+}
+.pic{
+    display: flex;
+    gap: 15px;
+}
+.pic1{
+    width:88px;
+    border-radius: 10px;
+}
+.text-main{
+    display: grid;
+}
+h5{
+    font-size: 12px;
+    margin-top: 50px;
+}
+h2{
+    font-size: 24px;
+}
+p{
+    font-weight: normal;
+    font-size: 14px;
+    color: #68707D;
+
+}
+.price{
+    display: flex;
+}
+.minus{
+    display: flex;
+}
