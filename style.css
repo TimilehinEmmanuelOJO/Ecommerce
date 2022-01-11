@@ -20,6 +20,14 @@ ul{
     margin-top: 33px;
 }
 li{margin-left: 30px;}
+.hov{color: brown;
+    padding: 50px; 
+    border-color: darkblue;
+    background-color: rgb(255, 255, 255);}
+.hov:hover{
+    color: #000;
+    border-bottom: chartreuse;
+}
 a{
     text-decoration: none;
     cursor: pointer;
@@ -88,21 +96,67 @@ a{
     display: grid;
 }
 h5{
-    font-size: 12px;
+    font-size: 16px;
     margin-top: 50px;
+    color: #FF7D1A;
+
 }
 h2{
-    font-size: 24px;
+    font-size: 32px;
+    line-height: 40px;
 }
 p{
-    font-weight: normal;
-    font-size: 14px;
+    font-weight: lighter;
+    font-size: 16px;
+    line-height: 20px;
     color: #68707D;
 
 }
 .price{
     display: flex;
+    gap: 30px;
+}
+h4{
+    font-size: 22px;
+    font-style: normal;
+    line-height: 27.29px;
+}
+.fif{
+    background-color: #FFEDE0;
+    color: #FF7D1A;
+    height: 23px;
+    width: 38px;
+    text-align: center;
+}
+.str{
+    margin-bottom: 50px;
+    font-size: 14px;
+    line-height: 17.36px;
 }
 .minus{
     display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    padding: 0 50px;
+    background-color: rgb(223, 208, 208);
+    width: 60px;
+    height: 50px;
+    border-radius: 5px;
+
+}
+.num{margin: auto 0;}
+button{
+    text-decoration: none;
+    border: none;
+    color: #FF7D1A;
+    background-color: rgb(223, 208, 208);
+    font-size: 20px;
+    border-radius: 6px;
+}
+.down{display: flex; gap: 30px; margin-bottom: 40px;}
+.but{
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    color: #FF7D1A;
 }

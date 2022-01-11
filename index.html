@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script src="index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
   
   <title>Frontend Mentor | E-commerce product page</title>
 
@@ -14,61 +14,65 @@
   
 </head>
 <body>
-<div class="navbar">
-  <div class="container">
-    <div class="nav-flex">
-      <div class="ul1">
-        <div><a href=""><h1 class="sneak">sneakers</h1></a></div>
-        <ul>
-          <li><a href="">Collection</a></li>
-          <li><a href="">Men</a></li>
-          <li><a href="">Women</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
-      </div>
-      <div class="ul2">
-        <a href=""><i class=" cart fas fa-cart-plus"></i></a>
-        <a href=""><img src="images\image-avatar.png" class="image" alt="Display Picture of client"></a>
-      </div>
-    </div>
-    <div class="line"></div>
-  </div>
-</div>
-
-<section class="section2">
-    <div class="pic-main">
-      <img src="images\image-product-1.jpg" class="mainp" alt="">
-      <div class="pic">
-        <img src="images\image-product-1-thumbnail.jpg" class="pic1" alt="">
-        <img src="images\image-product-2-thumbnail.jpg" class="pic1" alt="">
-        <img src="images\image-product-3-thumbnail.jpg" class="pic1" alt="">
-        <img src="images\image-product-4-thumbnail.jpg" class="pic1" alt="">
-      </div>
-    </div>
-    <div class="text-main">
-      <h5>Sneaker Company</h5>
-      <h2>Fall Limited Edition <br> Sneakers</h2>
-      <p>These low-profile sneakers are your <br>
-         perfect casual wear companion. <br>
-        Featuring a durable rubber outer sole, <br>
-        they’ll withstand everything the <br>
-        weather can offer.
-      </p>
-      <div class="price">
-        <h4>$125.00</h4>
-        <p>50%</p>
-      </div>
-      <p>$250.00</p>
-      <div class="down">
-        <div class="minus">
-          <button><i class="fas fa-minus"></i></button>
-          <p>0</p>
-          <button><i class="fas fa-plus"></i></button>
+  <div class="vue-body">
+    <div class="navbar">
+      <div class="container">
+        <div class="nav-flex">
+          <div class="ul1">
+            <div><a href=""><h1 class="sneak">sneakers</h1></a></div>
+            <ul>
+              <li><a href="" class="hov">Collection</a></li>
+              <li><a href="">Men</a></li>
+              <li><a href="">Women</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </div>
+          <div class="ul2">
+            <a href=""><i class=" cart fas fa-cart-plus"></i></a>
+            <a href=""><img src="images\image-avatar.png" class="image" alt="Display Picture of client"></a>
+          </div>
         </div>
+        <div class="line"></div>
       </div>
     </div>
-</section>
+    
+    <section class="section2">
+        <div class="pic-main">
+          <img src="images\image-product-1.jpg" class="mainp" alt="">
+          <div class="pic">
+            <img src="images\image-product-1-thumbnail.jpg" class="pic1" alt="">
+            <img src="images\image-product-2-thumbnail.jpg" class="pic1" alt="">
+            <img src="images\image-product-3-thumbnail.jpg" class="pic1" alt="">
+            <img src="images\image-product-4-thumbnail.jpg" class="pic1" alt="">
+          </div>
+        </div>
+        <div class="text-main">
+          <h5>Sneaker Company</h5>
+          <h2>Fall Limited Edition <br> Sneakers</h2>
+          <p>These low-profile sneakers are your <br>
+             perfect casual wear companion. <br>
+            Featuring a durable rubber outer sole, <br>
+            they’ll withstand everything the <br>
+            weather can offer.
+          </p>
+          <div class="price">
+            <h4>$125.00</h4>
+            <p class="fif">50%</p>
+          </div>
+          <p class="str"><strike>$250.00</strike></p>
+          <div class="down">
+            <div class="minus">
+              <button v-on:click = 'subtract'><i class="minus1 fas fa-minus"></i></button>
+              <p class="num">{{number}}</p>
+              <button v-on:click = 'add'><i class=" plus fas fa-plus"></i></button>
+            </div>
+            <button class="but"> <i class="car fas fa-cart-plus"></i>Add to Cart</button>
+          </div>
+        </div>
+    </section>
+    
+  </div>
   
   
   
@@ -77,9 +81,6 @@
     Coded by <a href="#https://www.linkedin.com/in/emmanuel-timilehin-ojo-b6ba0170/">Timilehin OJO</a>.
   </div>
 -->
-
-  <script>
-
-  </script>
+<script src="index.js"></script>
 </body>
 </html>
