@@ -20,12 +20,12 @@ ul{
     margin-top: 33px;
 }
 li{margin-left: 30px;}
-.hov{color: brown;
-    padding: 50px; 
+.hov{color: rgb(12, 12, 12);
+    padding: 30px; 
     border-color: darkblue;
-    background-color: rgb(255, 255, 255);}
+}
 .hov:hover{
-    color: #000;
+    color: rgb(129, 68, 68);
     border-bottom: chartreuse;
 }
 a{
